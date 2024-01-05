@@ -1,3 +1,4 @@
+import "./components.css";
 const Card1 = (props) => {
   const { backgroundImage, title } = props;
 

@@ -1,3 +1,9 @@
+:root {
+  --beb: "Bebas Neue", sans-serif;
+  --mont: "Montserrat", sans-serif;
+  --pop: "Poppins", sans-serif;
+}
+
 /* navbar */
 .header {
   padding: 20px 30px;
@@ -59,10 +65,62 @@
   transition: 0.2s linear;
 }
 
+.card2 {
+  padding: 20px;
+  background-color: #201137;
+  width: 280px;
+  color: #ffffff;
+  height: 230px;
+  box-shadow: 0 0 20px #000;
+  transition: 0.3s ease-in-out;
+}
+
+.card2:hover {
+  box-shadow: 0 0 30px #00ffff;
+  transform: scale(1.05);
+}
+
+.card2 img {
+  width: 50px;
+  margin-bottom: 20px;
+  fill: #ffffff;
+  filter: drop-shadow(0 0 2px);
+}
+
+.card2 h3 {
+  font-size: 1.6rem;
+  font-family: var(--pop);
+}
+
+.card2 p {
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: var(--pop);
+}
+
 /* responsive */
 @media screen and (max-width: 1200px) and (min-width: 600px) {
   .header {
-    padding: 10px 20px;
+    padding: 20px 20px;
+  }
+
+  .card2 {
+    width: 280px;
+    height: 230px;
+    padding: 15px;
+  }
+
+  .card2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .card2 p {
+    font-size: 1rem;
+  }
+
+  .card2 img {
+    margin-bottom: 30px;
   }
 }
 
@@ -78,5 +136,23 @@
   .header .nav li a {
     text-decoration: none;
     font-size: 0.8rem;
+  }
+
+  .card2 {
+    width: 220px;
+    height: 220px;
+    padding: 15px;
+  }
+
+  .card2 h3 {
+    font-size: 1.2rem;
+  }
+
+  .card2 p {
+    font-size: 0.8rem;
+  }
+
+  .card2 img {
+    margin-bottom: 30px;
   }
 }
